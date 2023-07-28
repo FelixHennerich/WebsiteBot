@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Start Terminal application through kotlin">
+    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Console output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690446328170</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Console output">
+      <created>1690446968698</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690446968698</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +153,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="test" />
     <MESSAGE value="Start Terminal application through kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Terminal application through kotlin" />
+    <MESSAGE value="Console output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Console output" />
   </component>
 </project>
