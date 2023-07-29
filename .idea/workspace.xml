@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TestClass.kt" afterDir="false" />
+    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="BrowseWebsite funcation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690547112166</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Basic understanding of methods and classes in kotlin">
+      <created>1690654313174</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690654313174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +177,8 @@
     <MESSAGE value="Start Terminal application through kotlin" />
     <MESSAGE value="Console output" />
     <MESSAGE value="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values" />
-    <option name="LAST_COMMIT_MESSAGE" value="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values" />
+    <MESSAGE value="Basic understanding of methods and classes in kotlin" />
+    <MESSAGE value="BrowseWebsite funcation" />
+    <option name="LAST_COMMIT_MESSAGE" value="BrowseWebsite funcation" />
   </component>
 </project>

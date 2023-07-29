@@ -2,15 +2,28 @@ import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
+import java.awt.Desktop
+import java.net.URI
 
 fun main() {
-    htmlRequest()
-    TestClass().testfuncation()
+    browseWebsite()
 }
 
 fun startTerminal() {
     Runtime.getRuntime().exec("open /System/Applications/Utilities/Terminal.app")
     println("'Terminal' application has been started")
+}
+
+fun browseWebsite(){
+    val safariBrowser = Desktop.getDesktop()
+
+    if (safariBrowser.isSupported(Desktop.Action.BROWSE)) {
+        val youtubeURL = URI("https://www.youtube.com")
+        safariBrowser.browse(youtubeURL)
+    } else {
+        println("Safari-Browser wird auf diesem System nicht unterstützt.")
+        return
+    }
 }
 
 fun htmlRequest(){
