@@ -3,15 +3,23 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import java.awt.Desktop
+import java.io.IOException
 import java.net.URI
 
 fun main() {
-    browseWebsite()
+    startApplication()
 }
 
-fun startTerminal() {
-    Runtime.getRuntime().exec("open /System/Applications/Utilities/Terminal.app")
-    println("'Terminal' application has been started")
+fun startApplication() {
+    val chromePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+    val processBuilder = ProcessBuilder(chromePath)
+    try {
+        processBuilder.start()
+    } catch (e: IOException) {
+        e.printStackTrace()
+    }
+    println("Application has been started")
 }
 
 fun browseWebsite(){
