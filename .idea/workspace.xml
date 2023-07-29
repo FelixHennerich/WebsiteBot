@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Console output">
+    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/TestClass.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +55,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -62,7 +69,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2T6YWQtb4lMNec4x2dqpO3Wv1mj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -135,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690446968698</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values">
+      <created>1690547112166</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690547112166</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +170,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Start Terminal application through kotlin" />
     <MESSAGE value="Console output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Console output" />
+    <MESSAGE value="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values" />
+    <option name="LAST_COMMIT_MESSAGE" value="lineMethod to draw lines for fun&#10;working htmlRequest method to do any kind of request and output in console sorted by JSON values" />
   </component>
 </project>

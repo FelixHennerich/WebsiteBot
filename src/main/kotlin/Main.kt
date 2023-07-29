@@ -5,6 +5,7 @@ import okhttp3.Response
 
 fun main() {
     htmlRequest()
+    TestClass().testfuncation()
 }
 
 fun startTerminal() {
