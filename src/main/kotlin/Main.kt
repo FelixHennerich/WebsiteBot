@@ -7,7 +7,7 @@ import java.io.IOException
 import java.net.URI
 
 fun main() {
-    startApplication()
+    YouTubeViewBot().startViewBot()
 }
 
 fun startApplication() {
