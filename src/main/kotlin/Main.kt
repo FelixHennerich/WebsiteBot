@@ -2,12 +2,30 @@ import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+import org.openqa.selenium.chrome.ChromeOptions
 import java.awt.Desktop
 import java.io.IOException
 import java.net.URI
 
 fun main() {
-    YouTubeViewBot().startViewBot()
+    chromeDriver()
+}
+
+/**
+ * Method to start chromedriver and open youtube through it
+ */
+fun chromeDriver(){
+    System.setProperty("webdriver.chrome.driver" , "/Users/felix/Desktop/Dev-Schreibtisch/WebsiteBot/ChromeDriver/chromedriver_mac_arm64/chromedriver")
+
+    val chromeOptions = ChromeOptions()
+    // ? chromeOptions.addArguments("--headless") creates new tab in background
+
+    val driver: WebDriver = ChromeDriver(chromeOptions)
+    driver.get("https://www.youtube.com")
+
+    driver.quit() // ? quits chrome instantly
 }
 
 fun startApplication() {
