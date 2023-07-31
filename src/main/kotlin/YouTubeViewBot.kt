@@ -17,7 +17,7 @@ class YouTubeViewBot {
     fun startViewBot(){
         while(true){
             openYoutube()
-            Thread.sleep(1000)
+            Thread.sleep(10000)
        }
     }
 
