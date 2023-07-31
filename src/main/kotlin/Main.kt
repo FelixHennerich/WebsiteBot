@@ -2,12 +2,14 @@ import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
+import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import java.awt.Desktop
 import java.io.IOException
 import java.net.URI
+import javax.lang.model.element.Element
 
 fun main() {
     chromeDriver()
@@ -25,6 +27,18 @@ fun chromeDriver(){
     val driver: WebDriver = ChromeDriver(chromeOptions)
     driver.get("https://www.youtube.com")
 
+    Thread.sleep(1000)
+
+    // ? Suchen des "Cookie Buttons" und clicken
+    val element = driver.findElement(By.ByXPath("//*[@id=\"content\"]/div[2]/div[6]/div[1]/ytd-button-renderer[2]/yt-button-shape/button"))
+    element.click()
+
+    Thread.sleep(1000)
+    // ? Suchen des Anmelden Buttons
+    val element1 = driver.findElement(By.ByCssSelector("#buttons > ytd-button-renderer > yt-button-shape > a"))
+    element1.click()
+
+    Thread.sleep(5000)
     driver.quit() // ? quits chrome instantly
 }
 
