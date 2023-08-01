@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Chromedriver installed on mac and first usage (website open)">
+    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Chromedriver: - email eingeben&#10;weiter button&#10;Problem: &quot;Unsupported Browser&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/YouTubeViewBot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/YouTubeViewBot.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
   </component>
   <component name="ProjectId" id="2T6YWQtb4lMNec4x2dqpO3Wv1mj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -185,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690754585498</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Chromedriver: - open youtube&#10;- accept Cookies&#10;- navigate to anmelden">
+      <created>1690831054531</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690831054531</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +219,8 @@
     <MESSAGE value="start Chrome application by Processbuilder" />
     <MESSAGE value="YouTubeViewBot" />
     <MESSAGE value="Chromedriver installed on mac and first usage (website open)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chromedriver installed on mac and first usage (website open)" />
+    <MESSAGE value="Chromedriver: - open youtube&#10;- accept Cookies&#10;- navigate to anmelden" />
+    <MESSAGE value="Chromedriver: - email eingeben&#10;weiter button&#10;Problem: &quot;Unsupported Browser&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chromedriver: - email eingeben&#10;weiter button&#10;Problem: &quot;Unsupported Browser&quot;" />
   </component>
 </project>

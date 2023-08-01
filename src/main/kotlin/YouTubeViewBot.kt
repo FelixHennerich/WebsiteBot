@@ -37,9 +37,8 @@ class YouTubeViewBot {
         } catch (e: IOException) {
             e.printStackTrace()
         }
-
-
     }
+
 
     /**
      * Method to start Youtube Video (Press space)
@@ -51,3 +50,6 @@ class YouTubeViewBot {
         robot.keyRelease(KeyEvent.VK_SPACE)
     }
 }
+/*
+
+     */

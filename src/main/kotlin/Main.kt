@@ -3,6 +3,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response
 import org.openqa.selenium.By
+import org.openqa.selenium.By.ByCssSelector
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
@@ -27,19 +28,37 @@ fun chromeDriver(){
     val driver: WebDriver = ChromeDriver(chromeOptions)
     driver.get("https://www.youtube.com")
 
-    Thread.sleep(1000)
+    Thread.sleep(100)
 
     // ? Suchen des "Cookie Buttons" und clicken
-    val element = driver.findElement(By.ByXPath("//*[@id=\"content\"]/div[2]/div[6]/div[1]/ytd-button-renderer[2]/yt-button-shape/button"))
-    element.click()
+    clickButton("#content > div.body.style-scope.ytd-consent-bump-v2-lightbox > div.eom-buttons.style-scope.ytd-consent-bump-v2-lightbox > div:nth-child(1) > ytd-button-renderer:nth-child(2) > yt-button-shape > button", driver)
+    Thread.sleep(100)
 
-    Thread.sleep(1000)
     // ? Suchen des Anmelden Buttons
-    val element1 = driver.findElement(By.ByCssSelector("#buttons > ytd-button-renderer > yt-button-shape > a"))
-    element1.click()
+    clickButton("#buttons > ytd-button-renderer > yt-button-shape > a > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill", driver)
+    Thread.sleep(100)
 
+    // ? Anmelden email
+    val element2 = driver.findElement(By.ByCssSelector("#identifierId"))
+    element2.clear()
+    val email = "nitroxblue1@gmail.com"
+    element2.sendKeys(email)
+    Thread.sleep(100)
+
+    // ? Anmelden weiter
+    clickButton("#identifierNext > div > button > span", driver)
     Thread.sleep(5000)
-    driver.quit() // ? quits chrome instantly
+
+    // ? quits chrome instantly
+    driver.quit()
+
+}
+
+
+
+fun clickButton(selector: String, driver: WebDriver){
+    val element = driver.findElement(By.ByCssSelector(selector))
+    element.click()
 }
 
 fun startApplication() {
