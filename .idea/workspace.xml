@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Chromedriver: - email eingeben&#10;weiter button&#10;Problem: &quot;Unsupported Browser&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="Kotlin book some tests">
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690876757422</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Kotlin book some tests">
+      <created>1690971352574</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690971352574</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +233,7 @@
     <MESSAGE value="Chromedriver installed on mac and first usage (website open)" />
     <MESSAGE value="Chromedriver: - open youtube&#10;- accept Cookies&#10;- navigate to anmelden" />
     <MESSAGE value="Chromedriver: - email eingeben&#10;weiter button&#10;Problem: &quot;Unsupported Browser&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chromedriver: - email eingeben&#10;weiter button&#10;Problem: &quot;Unsupported Browser&quot;" />
+    <MESSAGE value="Kotlin book some tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kotlin book some tests" />
   </component>
 </project>

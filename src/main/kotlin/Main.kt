@@ -71,7 +71,7 @@ fun chromeDriver(){
 
     // ? Anmelden weiter
     clickButton("#identifierNext > div > button > span", driver)
-    Thread.sleep(5000)
+    Thread.sleep(6000)
 
     // ? quits chrome instantly
     driver.quit()
