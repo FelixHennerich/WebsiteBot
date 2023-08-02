@@ -13,7 +13,31 @@ import java.net.URI
 import javax.lang.model.element.Element
 
 fun main() {
-    chromeDriver()
+    testmethod()
+}
+
+fun testmethod(){
+    val n = (1..100).random()
+    val text =
+        if(n<50) "a"
+        else if(n == 50)  "b"
+            else "c"
+
+    println(text)
+
+    when(n){
+        1,2,3,4,5,6,7,8,9,10 -> println("abcd")
+        else                 -> println("no luck")
+    }
+
+    lineMethod(20)
+    var set = mutableSetOf<Int>()
+    do{
+        set.add((1..49).random())
+    }while(set.size < 6)
+    val lotto = set.toList().sorted()
+    println(lotto)
+    lineMethod(20)
 }
 
 /**
@@ -53,8 +77,6 @@ fun chromeDriver(){
     driver.quit()
 
 }
-
-
 
 fun clickButton(selector: String, driver: WebDriver){
     val element = driver.findElement(By.ByCssSelector(selector))
