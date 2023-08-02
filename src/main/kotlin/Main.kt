@@ -38,6 +38,10 @@ fun testmethod(){
     val lotto = set.toList().sorted()
     println(lotto)
     lineMethod(20)
+
+    val lst = listOf(1,2,3,4)
+    val newlst = lst.map({it -> it*it}) //? it*it = f(x) = x
+    println(newlst)
 }
 
 /**
