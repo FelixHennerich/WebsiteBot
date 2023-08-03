@@ -9,11 +9,28 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import java.awt.Desktop
 import java.io.IOException
+import java.lang.IllegalArgumentException
 import java.net.URI
-import javax.lang.model.element.Element
 
 fun main() {
-    testmethod()
+    method()
+}
+
+fun method(){
+    newmethod.testvalue = -1.0
+    println(newmethod.testvalue)
+}
+class newmethod() {
+    companion object {
+    var testvalue = 0.0
+        get() = field
+        set(value){
+            if(value <= 0)
+                throw IllegalArgumentException("Radius muss > 0 sein")
+            field = value
+        }
+
+    }
 }
 
 fun testmethod(){
