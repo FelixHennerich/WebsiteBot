@@ -13,7 +13,16 @@ import java.lang.IllegalArgumentException
 import java.net.URI
 
 fun main() {
-    method()
+    var password: String = "2348u43hffbehf!32§&$/§)"
+    println(password)
+    val cryp = EncryptionManager
+    var newpw = cryp.encryption(password)
+    println(newpw)
+    println(cryp.decryption(newpw))
+
+    if(password == cryp.decryption(newpw)){
+        println("Password successful encrypted and decrypted")
+    }
 }
 
 fun method(){

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="functions kotlin book p35">
+    <list default="true" id="3ea448ee-7de3-4d8d-ae8e-35426fb0a394" name="Changes" comment="compansion Objects and getter/ setter">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/EncryptionManager.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -221,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690980813236</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="compansion Objects and getter/ setter">
+      <created>1691073301186</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691073301186</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +259,7 @@
     <MESSAGE value="Kotlin book some tests" />
     <MESSAGE value="fixing bug" />
     <MESSAGE value="functions kotlin book p35" />
-    <option name="LAST_COMMIT_MESSAGE" value="functions kotlin book p35" />
+    <MESSAGE value="compansion Objects and getter/ setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="compansion Objects and getter/ setter" />
   </component>
 </project>
