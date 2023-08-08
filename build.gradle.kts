@@ -18,7 +18,6 @@ dependencies {
     implementation("com.google.code.gson:gson:2.8.9")
     implementation("org.seleniumhq.selenium:selenium-java:3.141.59")
 
-
 }
 
 tasks.test {

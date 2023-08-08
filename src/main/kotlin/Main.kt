@@ -13,6 +13,28 @@ import java.lang.IllegalArgumentException
 import java.net.URI
 
 fun main() {
+    mysql()
+}
+
+fun firebase(){
+}
+
+fun mysql(){
+    MySQL.startMySQL()
+
+    val valueFromDB = MySQL.getMySQL("SELECT a FROM newsapplication WHERE test = 1")
+
+    if (valueFromDB != null) {
+        println("Value from MySQL: $valueFromDB")
+    } else {
+        println("Failed to retrieve value from MySQL.")
+    }
+
+    MySQL.stopMySQL()
+
+}
+
+fun encryption(){
     var password: String = "MeinSuperstar//($%&/()))(/&%$%%$$§§§$!%&"
     println(password)
     val cryp = EncryptionManager
