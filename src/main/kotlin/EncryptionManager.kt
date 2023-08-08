@@ -21,9 +21,9 @@ internal object EncryptionManager {
         // Matrix to generate the
         // Encrypted String
         val arr = Array(a) {
-            CharArray(
-                b
-            )
+            CharArray(b){
+                ' '
+            }
         }
         var k = 0
 
@@ -54,12 +54,9 @@ internal object EncryptionManager {
         val a: Int = floor(sqrt(l.toDouble())).toInt()
         var decrypted = ""
 
-        // Matrix to generate the
-        // Encrypted String
+        // Matrix to generate the Encrypted String
         val arr = Array(a) {
-            CharArray(
-                b
-            )
+            CharArray(b) { ' ' }
         }
         var k = 0
 
@@ -67,32 +64,23 @@ internal object EncryptionManager {
         for (j in 0 until b) {
             for (i in 0 until a) {
                 if (k < l) {
-                    arr[j][i] = s[k]
+                    arr[i][j] = s[k]
+                    k++
                 }
-                k++
             }
         }
 
-        // Loop to generate
-        // decrypted String
-        for (j in 0 until a) {
-            for (i in 0 until b) {
-                decrypted += arr[i][j]
+        // Loop to generate decrypted String
+        for (i in 0 until a) {
+            for (j in 0 until b) {
+                if (arr[i][j] != ' ') {
+                    decrypted += arr[i][j]
+                }
             }
         }
 
-        val lst: MutableList<Char> = mutableListOf()
-        for(x in decrypted.indices){
-            lst += decrypted[x]
-        }
-        lst.removeAt(decrypted.length-1)
-        lst.removeAt(decrypted.length-2)
-
-        var decryption = ""
-        for(x in lst){
-            decryption += x
-        }
-        return decryption
+        return decrypted
     }
+
 
 }
