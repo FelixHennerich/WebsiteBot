@@ -17,6 +17,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.1")
     implementation("com.google.code.gson:gson:2.8.9")
     implementation("org.seleniumhq.selenium:selenium-java:3.141.59")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
 
 }
 

@@ -1,7 +1,5 @@
 import com.google.gson.Gson
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.Response
+import okhttp3.*
 import org.openqa.selenium.By
 import org.openqa.selenium.By.ByCssSelector
 import org.openqa.selenium.WebDriver
@@ -11,12 +9,67 @@ import java.awt.Desktop
 import java.io.IOException
 import java.lang.IllegalArgumentException
 import java.net.URI
+import kotlin.system.measureTimeMillis
 
 fun main() {
-    mysql()
+    val time1 = measureTimeMillis {
+        println(charChecker("hallHDUJEGDZUIOrodasH$&/()O§$%&/()OLKNBVCXSRTHkjhgfcvbnfRTZJMKL;JDisteintest"))
+    }
+    println(time1)
+}
+fun charChecker(value: String): Boolean{
+    val acceptedCharset = mutableListOf("a","b","c","d","e","f","g","'",">",
+        "h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x",
+        "y","z","1","2","3","4","5","6","7","8","9","0","!","§","$","%","&",
+        "/","(",")","=","?","ß","*","+","`","´","-","_",".",":",",",";","<"," ")
+    for(i in value.indices){
+        if(!acceptedCharset.contains(value[i].toString().lowercase())){
+            println(value[i])
+            return false
+        }
+    }
+    return true
 }
 
-fun firebase(){
+
+
+fun fetchErrorCode(nexception: String): Int{
+    var letterarray = mutableListOf<Char>()
+    for(i in 0 until nexception.toString().length){
+        letterarray.add(nexception.toString()[i])
+    }
+    val size = letterarray.size
+    return ("" + letterarray[size-3] + letterarray[size-2] + letterarray[size-1]).toInt()
+}
+
+fun mysqltests(){
+    val client = OkHttpClient()
+
+    val url = "https://cross-cultural-auto.000webhostapp.com/php/connectUpdate.php"
+
+    val requestBody = FormBody.Builder()
+        .add("table", "newsapplication")
+        .add("column", "b")
+        .add("value", "123")
+        .add("where", "test")
+        .add("unit", "1")
+        .build()
+
+    val request = Request.Builder()
+        .url(url)
+        .post(requestBody)
+        .build()
+
+    client.newCall(request).enqueue(object : Callback {
+        override fun onFailure(call: Call, e: IOException) {
+            e.printStackTrace()
+        }
+
+        override fun onResponse(call: Call, response: Response) {
+            val responseBody = response.body?.string()
+            println("Response: $responseBody")
+        }
+    })
 }
 
 fun mysql(){
