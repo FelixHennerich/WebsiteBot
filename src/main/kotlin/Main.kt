@@ -1,4 +1,8 @@
 import com.google.gson.Gson
+import event.Event
+import event.EventManager
+import event.EventType
+import event.listeners.HTTPListener
 import okhttp3.*
 import org.openqa.selenium.By
 import org.openqa.selenium.By.ByCssSelector
@@ -12,11 +16,23 @@ import java.net.URI
 import kotlin.system.measureTimeMillis
 
 fun main() {
-    val time1 = measureTimeMillis {
-        println(charChecker("hallHDUJEGDZUIOrodasH$&/()O§$%&/()OLKNBVCXSRTHkjhgfcvbnfRTZJMKL;JDisteintest"))
-    }
-    println(time1)
+    val input = "10.09.2023"
+
+    println(birhtdayChecker(input))
 }
+
+fun birhtdayChecker(birthday: String): Boolean{
+    val regex = Regex("\\d{2}.\\d{2}.\\d{4}")
+    if(regex.matches(birthday)){
+        return true
+    }
+    return false
+}
+
+
+
+
+
 fun charChecker(value: String): Boolean{
     val acceptedCharset = mutableListOf("a","b","c","d","e","f","g","'",">",
         "h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x",
